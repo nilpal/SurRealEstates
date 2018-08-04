@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,147 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SurRealEstates" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgF-s8-zIo">
+                                <rect key="frame" x="303" y="50" width="364" height="325"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4y-aQ-hv9">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="285"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="285" id="Pa1-Fq-MZs"/>
+                                        </constraints>
+                                        <string key="text">Haven't you always dreamed about owning real estate outside Earth?
+
+At SurReal Estates, we have developed a path-breaking technology to make your dream come true. Using the latest state-of-the-art mapping techniques and long-distance laser engravings, we now give you the chance to own your own piece of land on the Moon.
+
+Come, visit us today and claim your (sur)real estate!</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Q4y-aQ-hv9" firstAttribute="top" secondItem="bgF-s8-zIo" secondAttribute="top" id="Dw3-Yv-hvK"/>
+                                    <constraint firstAttribute="bottom" secondItem="Q4y-aQ-hv9" secondAttribute="bottom" constant="5" id="SVT-Or-xCC"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q4y-aQ-hv9" secondAttribute="trailing" constant="10" id="hJC-1S-Zgr"/>
+                                    <constraint firstItem="Q4y-aQ-hv9" firstAttribute="leading" secondItem="bgF-s8-zIo" secondAttribute="leading" id="ho1-7R-PhI"/>
+                                    <constraint firstItem="Q4y-aQ-hv9" firstAttribute="width" secondItem="bgF-s8-zIo" secondAttribute="width" constant="-10" id="tZ3-Al-rrd"/>
+                                </constraints>
+                            </scrollView>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="community-dark-full-moon-22138" translatesAutoresizingMaskIntoConstraints="NO" id="qf9-Dm-Jnj" userLabel="Background Image">
+                                <rect key="frame" x="0.0" y="72" width="303" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="223" id="8Y4-a4-cYf"/>
+                                    <constraint firstAttribute="height" constant="190" id="G8u-tB-NEP">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="200"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="303" id="wCf-iE-YBB"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8Y4-a4-cYf"/>
+                                        <exclude reference="G8u-tB-NEP"/>
+                                        <exclude reference="wCf-iE-YBB"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="G8u-tB-NEP"/>
+                                        <include reference="wCf-iE-YBB"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="8Y4-a4-cYf"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qf9-Dm-Jnj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8kK-JZ-YLM"/>
+                            <constraint firstAttribute="trailing" secondItem="bgF-s8-zIo" secondAttribute="trailing" constant="10" id="CvG-dG-QVo"/>
+                            <constraint firstItem="bgF-s8-zIo" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Gfs-P1-qfa"/>
+                            <constraint firstItem="qf9-Dm-Jnj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="KRW-SJ-995">
+                                <variation key="heightClass=regular-widthClass=compact" constant="1"/>
+                            </constraint>
+                            <constraint firstItem="qf9-Dm-Jnj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PKw-wF-UGa"/>
+                            <constraint firstItem="bgF-s8-zIo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QZa-C8-eIt"/>
+                            <constraint firstItem="bgF-s8-zIo" firstAttribute="top" secondItem="qf9-Dm-Jnj" secondAttribute="bottom" constant="21" id="Qnr-ih-a1R"/>
+                            <constraint firstAttribute="trailing" secondItem="qf9-Dm-Jnj" secondAttribute="trailing" id="S00-Hk-W4j"/>
+                            <constraint firstAttribute="trailing" secondItem="qf9-Dm-Jnj" secondAttribute="trailing" id="THX-Ol-jLw"/>
+                            <constraint firstItem="bgF-s8-zIo" firstAttribute="top" secondItem="qf9-Dm-Jnj" secondAttribute="bottom" constant="20" id="U51-xm-1Mx"/>
+                            <constraint firstItem="bgF-s8-zIo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VwJ-Wx-GpO"/>
+                            <constraint firstItem="qf9-Dm-Jnj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WRp-gF-r1Z"/>
+                            <constraint firstItem="bgF-s8-zIo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Xig-Tj-gYF"/>
+                            <constraint firstAttribute="trailing" secondItem="bgF-s8-zIo" secondAttribute="trailing" id="aJN-Sb-tFn"/>
+                            <constraint firstItem="bgF-s8-zIo" firstAttribute="leading" secondItem="qf9-Dm-Jnj" secondAttribute="trailing" id="sSr-8b-OUt"/>
+                            <constraint firstItem="qf9-Dm-Jnj" firstAttribute="centerX" secondItem="bgF-s8-zIo" secondAttribute="centerX" id="sib-NQ-R7J">
+                                <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="qf9-Dm-Jnj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="x26-kS-ero"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="PKw-wF-UGa"/>
+                                <exclude reference="S00-Hk-W4j"/>
+                                <exclude reference="WRp-gF-r1Z"/>
+                                <exclude reference="x26-kS-ero"/>
+                                <exclude reference="CvG-dG-QVo"/>
+                                <exclude reference="QZa-C8-eIt"/>
+                                <exclude reference="U51-xm-1Mx"/>
+                                <exclude reference="VwJ-Wx-GpO"/>
+                                <exclude reference="Xig-Tj-gYF"/>
+                                <exclude reference="aJN-Sb-tFn"/>
+                                <exclude reference="sSr-8b-OUt"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="PKw-wF-UGa"/>
+                                <exclude reference="THX-Ol-jLw"/>
+                                <exclude reference="sib-NQ-R7J"/>
+                                <exclude reference="QZa-C8-eIt"/>
+                                <exclude reference="Qnr-ih-a1R"/>
+                                <include reference="Xig-Tj-gYF"/>
+                                <include reference="aJN-Sb-tFn"/>
+                                <include reference="sSr-8b-OUt"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="8kK-JZ-YLM"/>
+                                <exclude reference="KRW-SJ-995"/>
+                                <include reference="S00-Hk-W4j"/>
+                                <exclude reference="THX-Ol-jLw"/>
+                                <include reference="WRp-gF-r1Z"/>
+                                <exclude reference="sib-NQ-R7J"/>
+                                <include reference="x26-kS-ero"/>
+                                <include reference="CvG-dG-QVo"/>
+                                <include reference="QZa-C8-eIt"/>
+                                <exclude reference="Qnr-ih-a1R"/>
+                                <include reference="U51-xm-1Mx"/>
+                                <exclude reference="VwJ-Wx-GpO"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="qf9-Dm-Jnj" id="izD-3w-1Ux"/>
+                        <outlet property="businessDescription" destination="Q4y-aQ-hv9" id="PH3-LI-xUu"/>
+                        <outlet property="scrollView" destination="bgF-s8-zIo" id="tYU-Da-hjY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="114.40000000000001" y="115.59220389805098"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="community-dark-full-moon-22138" width="3508" height="2480"/>
+    </resources>
 </document>
