@@ -16,6 +16,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var customerCounter: UILabel!
     var timer = Timer()
     var initCustomerCount = 10000
+    var isTimerRunning: Bool = false
+    override var prefersStatusBarHidden: Bool {
+        return false
+    }
     
     fileprivate func initBusinessDescription() {
         businessDescription.isEditable = false
@@ -28,7 +32,9 @@ class ViewController: UIViewController {
         scrollView.contentLayoutGuide.bottomAnchor.constraint(equalTo: businessDescription.bottomAnchor).isActive = true
         initBusinessDescription()
         fillDescription()
-        runTimer()
+        if(!isTimerRunning) {
+            runTimer()
+        }
     }
     
     override func viewDidLayoutSubviews() {
@@ -41,8 +47,9 @@ class ViewController: UIViewController {
     }
     
     func runTimer() {
-        let rnd = arc4random_uniform(4)
-        timer = Timer.scheduledTimer(timeInterval: TimeInterval(rnd), target: self, selector: (#selector(ViewController.updateCustomerCounter)), userInfo: nil, repeats: true)
+        let rnd = arc4random_uniform(2)
+        timer = Timer.scheduledTimer(timeInterval: TimeInterval(rnd), target: self, selector: (#selector(ViewController.updateCustomerCounter)), userInfo: nil, repeats: false)
+        isTimerRunning = true
     }
     
     @objc func updateCustomerCounter() {
@@ -53,6 +60,7 @@ class ViewController: UIViewController {
         formatter.groupingSeparator = Locale.current.groupingSeparator
         let txtCount = formatter.string(from: NSNumber(value: initCustomerCount))
         customerCounter.text = "\(txtCount ?? "0") owners and counting..."
+        runTimer()
     }
 
     func fillDescription(){

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,17 +15,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SurRealEstates" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" opaque="NO" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eqe-TR-eQd">
-                                <rect key="frame" x="0.0" y="20" width="667" height="375"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F8X-nj-yLh">
-                                        <rect key="frame" x="0.0" y="0.0" width="333.5" height="375"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="323.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwh-79-YnE" userLabel="Company Header">
-                                                <rect key="frame" x="85.5" y="5" width="153.5" height="24"/>
+                                                <rect key="frame" x="106.5" y="5" width="153.5" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="fHE-gd-bUM"/>
                                                 </constraints>
@@ -42,21 +42,21 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="community-dark-full-moon-22138" translatesAutoresizingMaskIntoConstraints="NO" id="qf9-Dm-Jnj" userLabel="Background Image">
-                                                <rect key="frame" x="-12.5" y="37" width="359" height="245"/>
+                                                <rect key="frame" x="8" y="37" width="359" height="245"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="359" id="2kZ-mu-kIq"/>
                                                     <constraint firstAttribute="height" constant="245" id="vuv-t9-XrO"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="aim for the stars, shoot for the moon!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYj-Z0-BtS" userLabel="Tag Line">
-                                                <rect key="frame" x="39.5" y="287" width="254.5" height="19"/>
+                                                <rect key="frame" x="65" y="287" width="254.5" height="19"/>
                                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
                                                 <color key="textColor" cyan="0.39043202706509167" magenta="0.33884318053929341" yellow="0.0" black="0.0" alpha="0.88246468321917804" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naa-7g-lBx">
-                                                <rect key="frame" x="167" y="314" width="0.0" height="0.0"/>
+                                                <rect key="frame" x="192" y="314" width="0.0" height="0.0"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" none="YES"/>
                                                 </accessibility>
@@ -90,17 +90,18 @@
                                         </variation>
                                     </view>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgF-s8-zIo">
-                                        <rect key="frame" x="333.5" y="0.0" width="333.5" height="375"/>
+                                        <rect key="frame" x="0.0" y="323.5" width="375" height="323.5"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" indicatorStyle="white" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="APa-UW-z7r">
-                                                <rect key="frame" x="13" y="17" width="306.5" height="340.5"/>
+                                                <rect key="frame" x="13" y="17" width="348" height="289"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <color key="textColor" red="0.94149297475814819" green="0.58906573057174683" blue="0.0014235541457310319" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="APa-UW-z7r" firstAttribute="centerX" secondItem="bgF-s8-zIo" secondAttribute="centerX" id="G1l-N7-JJB"/>
                                             <constraint firstItem="APa-UW-z7r" firstAttribute="leading" secondItem="bgF-s8-zIo" secondAttribute="leading" constant="13" id="IGs-zd-VpT"/>
@@ -116,11 +117,11 @@
                                 <variation key="heightClass=regular-widthClass=regular" axis="horizontal"/>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.94149297480000005" green="0.5890657306" blue="0.0014235541459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eqe-TR-eQd" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="Hye-FV-Wc0"/>
                             <constraint firstItem="eqe-TR-eQd" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="mDo-LW-DEc"/>
-                            <constraint firstItem="eqe-TR-eQd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="rDY-Jd-Xvo"/>
+                            <constraint firstItem="eqe-TR-eQd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rDY-Jd-Xvo"/>
                             <constraint firstItem="eqe-TR-eQd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zoV-3Y-BLZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
