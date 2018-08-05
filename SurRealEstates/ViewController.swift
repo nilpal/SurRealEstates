@@ -13,43 +13,51 @@ class ViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var businessDescription: UITextView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        scrollView.contentLayoutGuide.bottomAnchor.constraint(equalTo: businessDescription.bottomAnchor).isActive = true
+    @IBOutlet weak var customerCounter: UILabel!
+    var timer = Timer()
+    var initCustomerCount = 10000
+    
+    fileprivate func initBusinessDescription() {
         businessDescription.isEditable = false
         businessDescription.dataDetectorTypes = UIDataDetectorTypes.all
-        FillDescription()
         businessDescription.setContentOffset(.zero, animated: false)
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        scrollView.contentLayoutGuide.bottomAnchor.constraint(equalTo: businessDescription.bottomAnchor).isActive = true
+        initBusinessDescription()
+        fillDescription()
+        runTimer()
+    }
+    
     override func viewDidLayoutSubviews() {
-        businessDescription.setContentOffset(.zero, animated: false)
+        //businessDescription.setContentOffset(.zero, animated: false)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func runTimer() {
+        let rnd = arc4random_uniform(4)
+        timer = Timer.scheduledTimer(timeInterval: TimeInterval(rnd), target: self, selector: (#selector(ViewController.updateCustomerCounter)), userInfo: nil, repeats: true)
+    }
+    
+    @objc func updateCustomerCounter() {
+        let rnd = arc4random_uniform(9)
+        initCustomerCount += Int(rnd)        
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.groupingSeparator = Locale.current.groupingSeparator
+        let txtCount = formatter.string(from: NSNumber(value: initCustomerCount))
+        customerCounter.text = "\(txtCount ?? "0") owners and counting..."
+    }
 
-    func FillDescription(){
+    func fillDescription(){
        
-        let desc: String = """
-
-
-Making your Real Estates Surreal!
-
-Haven't you always dreamed about owning real estate outside Earth?
-
-At SurReal Estates, we have developed a path-breaking technology to make your dream come true. Using the latest state-of-the-art mapping techniques and long-distance laser engravings, we now give you the chance to own a piece of land on the Moon and mark your boundary right from Earth.
-
-Come, visit us (yes, we have a office in Earth!) and claim your surreal estate!
-
-Phone: 1-555-555-5455
-Hours: Monday - Friday 9AM - 5PM EST
-Location: 18441 Nantz Rd, Cornelius, NC 28031
-
-
-"""
+        let desc: String = NSLocalizedString("BusinessDesc", comment: "")
         businessDescription.text = desc
     }
 

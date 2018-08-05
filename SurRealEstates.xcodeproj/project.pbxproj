@@ -10,8 +10,8 @@
 		E738D95E2115F8DF00CFEFE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E738D95D2115F8DF00CFEFE6 /* AppDelegate.swift */; };
 		E738D9602115F8DF00CFEFE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E738D95F2115F8DF00CFEFE6 /* ViewController.swift */; };
 		E738D9632115F8DF00CFEFE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E738D9612115F8DF00CFEFE6 /* Main.storyboard */; };
-		E738D9662115F8DF00CFEFE6 /* SurRealEstates.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E738D9642115F8DF00CFEFE6 /* SurRealEstates.xcdatamodeld */; };
 		E738D9682115F8E900CFEFE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E738D9672115F8E900CFEFE6 /* Assets.xcassets */; };
+		E738D97A21179C7200CFEFE6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E738D97C21179C7200CFEFE6 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +19,9 @@
 		E738D95D2115F8DF00CFEFE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E738D95F2115F8DF00CFEFE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E738D9622115F8DF00CFEFE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E738D9652115F8DF00CFEFE6 /* SurRealEstates.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SurRealEstates.xcdatamodel; sourceTree = "<group>"; };
 		E738D9672115F8E900CFEFE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E738D96C2115F8E900CFEFE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E738D97B21179C7200CFEFE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +38,7 @@
 		E738D9512115F8DE00CFEFE6 = {
 			isa = PBXGroup;
 			children = (
+				E738D97C21179C7200CFEFE6 /* Localizable.strings */,
 				E738D95C2115F8DF00CFEFE6 /* SurRealEstates */,
 				E738D95B2115F8DF00CFEFE6 /* Products */,
 			);
@@ -59,7 +60,6 @@
 				E738D9612115F8DF00CFEFE6 /* Main.storyboard */,
 				E738D9672115F8E900CFEFE6 /* Assets.xcassets */,
 				E738D96C2115F8E900CFEFE6 /* Info.plist */,
-				E738D9642115F8DF00CFEFE6 /* SurRealEstates.xcdatamodeld */,
 			);
 			path = SurRealEstates;
 			sourceTree = "<group>";
@@ -123,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E738D9682115F8E900CFEFE6 /* Assets.xcassets in Resources */,
+				E738D97A21179C7200CFEFE6 /* Localizable.strings in Resources */,
 				E738D9632115F8DF00CFEFE6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +137,6 @@
 			files = (
 				E738D9602115F8DF00CFEFE6 /* ViewController.swift in Sources */,
 				E738D95E2115F8DF00CFEFE6 /* AppDelegate.swift in Sources */,
-				E738D9662115F8DF00CFEFE6 /* SurRealEstates.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +149,14 @@
 				E738D9622115F8DF00CFEFE6 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E738D97C21179C7200CFEFE6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E738D97B21179C7200CFEFE6 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -211,6 +219,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -261,9 +270,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -326,19 +337,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		E738D9642115F8DF00CFEFE6 /* SurRealEstates.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				E738D9652115F8DF00CFEFE6 /* SurRealEstates.xcdatamodel */,
-			);
-			currentVersion = E738D9652115F8DF00CFEFE6 /* SurRealEstates.xcdatamodel */;
-			path = SurRealEstates.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = E738D9522115F8DE00CFEFE6 /* Project object */;
 }
