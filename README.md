@@ -15,4 +15,4 @@ It covers a few key concepts -
   * Localization Strings using external files
   * Disabling iPhone8 Plus default Status Bar visibility
   
-  <center><img src="https://github.com/nj-app/SurRealEstates/blob/master/Media/Simulator%20Screen%20Shot%20-%20iPhone%207%20Portrait.png" width="200" />&nbsp;<img src="https://github.com/nj-app/SurRealEstates/blob/master/Media/Simulator%20Screen%20Shot%20-%20iPhone%207%20Landscape.png" width="400" /></center>
+  <p align="center"><img src="https://github.com/nj-app/SurRealEstates/blob/master/Media/Simulator%20Screen%20Shot%20-%20iPhone%207%20Portrait.png" width="200" />&nbsp;&nbsp;<img src="https://github.com/nj-app/SurRealEstates/blob/master/Media/Simulator%20Screen%20Shot%20-%20iPhone%207%20Landscape.png" width="400" /></p>
