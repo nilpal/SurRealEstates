@@ -22,6 +22,12 @@
 		E738D9672115F8E900CFEFE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E738D96C2115F8E900CFEFE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E738D97B21179C7200CFEFE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E738D97E2117D55500CFEFE6 /* Simulator Screen Shot - iPhone 7 Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 7 Portrait.png"; sourceTree = "<group>"; };
+		E738D97F2117D58400CFEFE6 /* Simulator Screen Shot - iPhone 7 Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 7 Landscape.png"; sourceTree = "<group>"; };
+		E738D9802117D5B000CFEFE6 /* SurReal Estates - iPhone7 Portrait.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "SurReal Estates - iPhone7 Portrait.mov"; sourceTree = "<group>"; };
+		E738D9812117D5EC00CFEFE6 /* SurReal Estates - iPhone7 Landscape.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "SurReal Estates - iPhone7 Landscape.mov"; sourceTree = "<group>"; };
+		E738D9822117D5F800CFEFE6 /* SurReal Estates - iPad Portrait.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "SurReal Estates - iPad Portrait.mov"; sourceTree = "<group>"; };
+		E738D9832117D60100CFEFE6 /* SurReal Estates - iPad Landcape.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "SurReal Estates - iPad Landcape.mov"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,7 @@
 		E738D9512115F8DE00CFEFE6 = {
 			isa = PBXGroup;
 			children = (
+				E738D97D2117D4F800CFEFE6 /* Media */,
 				E738D97C21179C7200CFEFE6 /* Localizable.strings */,
 				E738D95C2115F8DF00CFEFE6 /* SurRealEstates */,
 				E738D95B2115F8DF00CFEFE6 /* Products */,
@@ -62,6 +69,19 @@
 				E738D96C2115F8E900CFEFE6 /* Info.plist */,
 			);
 			path = SurRealEstates;
+			sourceTree = "<group>";
+		};
+		E738D97D2117D4F800CFEFE6 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				E738D97F2117D58400CFEFE6 /* Simulator Screen Shot - iPhone 7 Landscape.png */,
+				E738D97E2117D55500CFEFE6 /* Simulator Screen Shot - iPhone 7 Portrait.png */,
+				E738D9802117D5B000CFEFE6 /* SurReal Estates - iPhone7 Portrait.mov */,
+				E738D9812117D5EC00CFEFE6 /* SurReal Estates - iPhone7 Landscape.mov */,
+				E738D9822117D5F800CFEFE6 /* SurReal Estates - iPad Portrait.mov */,
+				E738D9832117D60100CFEFE6 /* SurReal Estates - iPad Landcape.mov */,
+			);
+			path = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
