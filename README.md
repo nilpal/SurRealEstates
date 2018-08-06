@@ -1,4 +1,4 @@
-# SurRealEstates
+# Surreal Estates
 iOS Basic App - Small Business Homepage
 
 A very basic iOS app written in Swift 3 using XCode. 
