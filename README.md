@@ -15,4 +15,4 @@ It covers a few key concepts -
   * Localization Strings using external files
   * Disabling iPhone8 Plus default Status Bar visibility
   
-  ![iPhone Portrait Mode](https://github.com/nj-app/SurRealEstates/blob/master/Media/Simulator%20Screen%20Shot%20-%20iPhone%207%20Portrait.png "iPhone Portrait Mode" | width=200)
+  ![iPhone Portrait Mode](https://github.com/nj-app/SurRealEstates/blob/master/Media/Simulator%20Screen%20Shot%20-%20iPhone%207%20Portrait.png | width=200 "iPhone Portrait Mode")
